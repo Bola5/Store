@@ -24,6 +24,13 @@
 		83EE120829903DFB00EA1D9D /* StoreLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE120729903DFB00EA1D9D /* StoreLayoutViewModel.swift */; };
 		83EE120A29903EF400EA1D9D /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE120929903EF400EA1D9D /* StoreViewModel.swift */; };
 		83EE121F29916EA800EA1D9D /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE121E29916EA800EA1D9D /* ProductTableViewCell.swift */; };
+		83EE122229917E1100EA1D9D /* AddToCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE122129917E1100EA1D9D /* AddToCartView.swift */; };
+		83EE12242991835B00EA1D9D /* ChangeQuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE12232991835B00EA1D9D /* ChangeQuantityView.swift */; };
+		83EE122729918B2300EA1D9D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE122629918B2300EA1D9D /* CheckoutViewController.swift */; };
+		83EE1229299289BA00EA1D9D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE1228299289BA00EA1D9D /* Enums.swift */; };
+		83EE122C2992DF6300EA1D9D /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE122B2992DF6300EA1D9D /* CheckoutViewModel.swift */; };
+		83EE12302992EE4700EA1D9D /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE122F2992EE4700EA1D9D /* CheckoutTableViewCell.swift */; };
+		83EE12322992EF2F00EA1D9D /* CheckoutLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE12312992EF2F00EA1D9D /* CheckoutLayoutViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,13 @@
 		83EE120729903DFB00EA1D9D /* StoreLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLayoutViewModel.swift; sourceTree = "<group>"; };
 		83EE120929903EF400EA1D9D /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		83EE121E29916EA800EA1D9D /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		83EE122129917E1100EA1D9D /* AddToCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartView.swift; sourceTree = "<group>"; };
+		83EE12232991835B00EA1D9D /* ChangeQuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeQuantityView.swift; sourceTree = "<group>"; };
+		83EE122629918B2300EA1D9D /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		83EE1228299289BA00EA1D9D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		83EE122B2992DF6300EA1D9D /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		83EE122F2992EE4700EA1D9D /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
+		83EE12312992EF2F00EA1D9D /* CheckoutLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutLayoutViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +118,7 @@
 			children = (
 				8327BCAD2986BA4B0059F03E /* Constants.swift */,
 				8327BCAE2986BA4B0059F03E /* Extensions.swift */,
+				83EE1228299289BA00EA1D9D /* Enums.swift */,
 			);
 			path = AUX;
 			sourceTree = "<group>";
@@ -123,6 +138,7 @@
 		83EE11FC2990399F00EA1D9D /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
+				83EE122A2992DF4D00EA1D9D /* Checkout */,
 				83EE11FD299039BC00EA1D9D /* Store */,
 			);
 			path = "Business Logic";
@@ -141,6 +157,7 @@
 		83EE11FE299039CA00EA1D9D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				83EE122529918AFB00EA1D9D /* Checkout */,
 				83EE11FF299039D200EA1D9D /* Store */,
 			);
 			path = Presentation;
@@ -149,6 +166,7 @@
 		83EE11FF299039D200EA1D9D /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				83EE122029917DC200EA1D9D /* Views */,
 				83EE121D29916E9200EA1D9D /* Cell */,
 				8327BC9A2986B0400059F03E /* StoreViewController.swift */,
 			);
@@ -184,6 +202,41 @@
 			isa = PBXGroup;
 			children = (
 				83EE121E29916EA800EA1D9D /* ProductTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		83EE122029917DC200EA1D9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83EE122129917E1100EA1D9D /* AddToCartView.swift */,
+				83EE12232991835B00EA1D9D /* ChangeQuantityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83EE122529918AFB00EA1D9D /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				83EE122E2992EE3600EA1D9D /* Cell */,
+				83EE122629918B2300EA1D9D /* CheckoutViewController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		83EE122A2992DF4D00EA1D9D /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				83EE122B2992DF6300EA1D9D /* CheckoutViewModel.swift */,
+				83EE12312992EF2F00EA1D9D /* CheckoutLayoutViewModel.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		83EE122E2992EE3600EA1D9D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				83EE122F2992EE4700EA1D9D /* CheckoutTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -258,9 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE122C2992DF6300EA1D9D /* CheckoutViewModel.swift in Sources */,
 				8327BCB62986BA4B0059F03E /* Constants.swift in Sources */,
+				83EE12322992EF2F00EA1D9D /* CheckoutLayoutViewModel.swift in Sources */,
 				8327BCBA2986BA4B0059F03E /* CommunicationManager.swift in Sources */,
 				83EE121F29916EA800EA1D9D /* ProductTableViewCell.swift in Sources */,
+				83EE12242991835B00EA1D9D /* ChangeQuantityView.swift in Sources */,
 				83EE120229903A0500EA1D9D /* StoreModel.swift in Sources */,
 				8327BCB72986BA4B0059F03E /* Extensions.swift in Sources */,
 				8327BCB82986BA4B0059F03E /* CodableManager.swift in Sources */,
@@ -273,6 +329,10 @@
 				83EE120829903DFB00EA1D9D /* StoreLayoutViewModel.swift in Sources */,
 				8327BCB92986BA4B0059F03E /* EndPoints.swift in Sources */,
 				8327BC992986B0400059F03E /* SceneDelegate.swift in Sources */,
+				83EE122729918B2300EA1D9D /* CheckoutViewController.swift in Sources */,
+				83EE12302992EE4700EA1D9D /* CheckoutTableViewCell.swift in Sources */,
+				83EE122229917E1100EA1D9D /* AddToCartView.swift in Sources */,
+				83EE1229299289BA00EA1D9D /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

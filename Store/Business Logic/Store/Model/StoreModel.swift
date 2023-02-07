@@ -14,7 +14,7 @@ struct StoreModel: Codable {
     struct Products: Codable {
         let code: String
         let name: String
-        let price: Int
+        let price: Float
     }
     
 }

@@ -19,7 +19,7 @@ struct StoreLayoutViewModel {
         
         let code: String
         let name: String
-        let price: Int
+        let price: Float
         
         init(product: StoreModel.Products) {
             self.code = product.code
@@ -27,6 +27,11 @@ struct StoreLayoutViewModel {
             self.price = product.price
         }
         
+    }
+    
+    struct CartLayoutViewModel {
+        let product: StoreLayoutViewModel.ProductLayoutViewModel
+        let quantity: Int
     }
 
 }
